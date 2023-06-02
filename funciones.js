@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 // EJERCICIO 1
 
 // const celsiusFahrenheit = (grados) => {

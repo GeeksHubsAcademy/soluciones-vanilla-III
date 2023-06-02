@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-iii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bucles.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeeksHubsAcademy/soluciones-vanilla-III.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeeksHubsAcademy/soluciones-vanilla-III/issues"
+  },
+  "homepage": "https://github.com/GeeksHubsAcademy/soluciones-vanilla-III#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

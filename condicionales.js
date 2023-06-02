@@ -1,6 +1,8 @@
+const prompt = require("prompt-sync")();
+
 // CONDICIONALES
 
-// EJERCICIO 1
+// // EJERCICIO 1 - Pedir dos números y decir si son múltiplos o no.
 
 // let num1 = parseInt(prompt("Di un número"))
 // let num2 = parseInt(prompt("Di otro número"))
@@ -11,7 +13,7 @@
 //     console.log("No son múltiplos")
 // }
 
-// EJERCICIO 2
+// // EJERCICIO 2 - Pedir dos números y decir cual es el mayor.
 
 // let num1 = parseInt(prompt("Di un número"))
 // let num2 = parseInt(prompt("Di otro número"))
@@ -24,7 +26,7 @@
 //     console.log("Son iguales")
 // }
 
-// EJERCICIO 3
+// // EJERCICIO 3 - Pedir un número y decir si es un número negativo, si es positivo o cero.
 
 // let num = parseInt(prompt("Di un número"))
 
@@ -36,7 +38,7 @@
 //     console.log("Es cero")
 // }
 
-// EJERCICIO 4
+// // EJERCICIO 4 - Pedir un string y determinar si tiene cinco caracteres o más.
 
 // let str = prompt("Introduce una palabra")
 
@@ -46,21 +48,32 @@
 //     console.log("Tiene menos de cinco letras")
 // }
 
-// EJERCICIO 5
+// // EJERCICIO 5 - Pedir tres números enteros con un valor del 1 al 10, sacar el promedio de los tres números y determinar si el promedio es mayor que cinco.
 
 // let num1 = parseInt(prompt("Di un número"));
+// while(num1 < 1 || num1 > 10){
+//     num1 = parseInt(prompt("El número debe estar entre el 1 y el 10"))
+// }
 // let num2 = parseInt(prompt("Di otro número"));
+// while(num2 < 1 || num2 > 10){
+//     num2 = parseInt(prompt("El número debe estar entre el 1 y el 10"))
+// }
 // let num3 = parseInt(prompt("Di otro número"));
+// while(num3 < 1 || num3 > 10){
+//     num3 = parseInt(prompt("El número debe estar entre el 1 y el 10"))
+// }
 
 // let promedio = (num1 + num2 + num3) / 3;
 
 // if (promedio > 5) {
-//   console.log("El promedio es mayor que cinco: ", promedio);
+//   console.log("El promedio es mayor que cinco: ", promedio.toFixed(2));
+// } else if(promedio < 5) {
+//   console.log("El promedio es menor que cinco: ", promedio.toFixed(2));
 // } else {
-//   console.log("El promedio es menor que cinco: ", promedio);
+//     console.log("El promedio es de 5")
 // }
 
-// EJERCICIO 6
+// // EJERCICIO 6 - Pedir una cadena de texto y comprobar que todas sus letras estén en minúsculas.
 
 // let str = prompt("Escribe una palabra o frase")
 
@@ -72,9 +85,17 @@
 //     console.log("Hay alguna letra en mayúsculas")
 // }
 
-// EJERCICIO 7
+// // EJERCICIO 7 - Crear un número aleatorio entre el 1 y 20 y comprobar si es par o impar. Mostrar además el número.
 
+// // let random = Math.random()
+// // console.log(random)
+// // let hasta20 = random * 20
+// // console.log(hasta20)
+// // let numeroFinal = Math.ceil(hasta20)
+// // console.log(numeroFinal)
 // let num = Math.ceil(Math.random() * 20);
+// // Math.floor -- siempre redondea hacia abajo
+// // Math.round -- redondea normal
 
 // if (num % 2 === 0){
 //     console.log("El número es ", num, " y es par")
@@ -82,7 +103,7 @@
 //     console.log("El número es ", num, " y es impar")
 // }
 
-// EJERCICIO 8
+// // EJERCICIO 8 - Crea un programa que lea tres notas de un alumno, calcule la media e indique si ha aprobado o no.
 
 // let nota1 = parseInt(prompt("Introduce la primera nota"));
 // let nota2 = parseInt(prompt("Introduce la segunda nota"));
@@ -91,12 +112,12 @@
 // let media = (nota1 + nota2 + nota3) / 3
 
 // if(media >= 5){
-//     console.log("Nota media: ", media, "Ha aprobado")
+//     console.log("Nota media: ", media.toFixed(2), "Ha aprobado")
 // } else{
-//     console.log("Nota media: ", media, "Ha suspendido")
+//     console.log("Nota media: ", media.toFixed(2), "Ha suspendido")
 // }
 
-// EJERCICIO 9
+// // EJERCICIO 9 - Crea un programa para una tienda de coches: si el coche a la venta es un Ford Fiesta, el descuento es de un 5 %. Si el coche a la venta es un Ford Focus, el descuento es del 10 %. El usuario introduce marca y modelo y el programa saca el descuento correspondiente por pantalla.
 
 // let marca = prompt("¿De qué marca es el coche?")
 // let modelo = prompt("¿De qué modelo es el coche?")
@@ -116,7 +137,7 @@
 //     console.log("Esto es un concesionario Ford")
 // }
 
-// EJERCICIO 10
+// // EJERCICIO 10 -Crea un programa en el que el usuario introduzca el número del mes (del 1 al 12) y elcódigo responda cuántos días tiene ese mes.
 
 // let mes = parseInt(prompt("¿Qué mes?"));
 
@@ -144,7 +165,11 @@
 //     break;
 // }
 
-// EJERCICIO 11
+// // EJERCICIO 11
+
+// // Crea un script que pida al usuario el diámetro de una rueda y su grosor (en metros) y realice las siguientes operaciones:
+// // a) Si el diámetro es superior a 1.4 metros debe mostrarse el mensaje “La rueda es para un vehículo grande”. Si es menor o igual a 1.4 metros pero mayor que 0.8 debe mostrarse el mensaje “La rueda es para un vehículo mediano”. Si no se cumplen ninguna de las condiciones anteriores debe mostrarse por pantalla el mensaje “La rueda es para un vehículo pequeño”.
+// // b) Si el diámetro es superior a 1.4 con un grosor inferior a 0.4, o si el diámetro es menor o igual a 1.4 pero mayor que 0.8, con un grosor inferior a 0.25, deberá mostrarse el mensaje “El grosor para esta rueda es inferior al recomendado”
 
 // let diametro = parseFloat(prompt("Diámetro"))
 // let grosor = parseFloat(prompt("Grosor"))
